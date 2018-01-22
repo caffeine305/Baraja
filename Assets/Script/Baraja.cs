@@ -7,11 +7,6 @@ public class Baraja : MonoBehaviour {
     int cantidad = 13;
     int palos = 4;
 
-    //Naipe[] picas = new Naipe[13]; //1
-    //Naipe[] treboles = new Naipe[13]; //2
-    //Naipe[] corazones = new Naipe[13]; //3
-    //Naipe[] diamantes = new Naipe[13]; //4
-
     Naipe[] carta = new Naipe[52];
        
     void Start()
@@ -21,17 +16,8 @@ public class Baraja : MonoBehaviour {
 
     void initBaraja()
     {
-        /*
-        for (int i = 0; i < cantidad; ++i)
-        {
-            picas[i] = new Naipe(i+1,false,1);
-            treboles[i] = new Naipe(i + 1, false, 2);
-            corazones[i] = new Naipe(i + 1, false, 3);
-            diamantes[i] = new Naipe(i + 1, false, 4);
-        }
-        */
+        //Las 52 se generan de un golpe con...
 
-        //Las 52 se pueden generar de un golpe con algo como
         int auxCont = 0;
         for (int i = 0; i < palos; ++i)
         {
@@ -51,7 +37,7 @@ public class Baraja : MonoBehaviour {
 
     private void Update()
     {
-        Debug.Log("La carta elegida es: " + carta[51].valor + " de "+ carta[51].palo);
+        //Debug.Log("La carta elegida es: " + carta[51].valor + " de "+ carta[51].palo);
     }
 
 
